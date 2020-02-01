@@ -28,7 +28,7 @@ import org.openxmlformats.schemas.drawingml.x2006.chart.CTMarker;
 import org.openxmlformats.schemas.drawingml.x2006.chart.CTMarkerStyle;
 import org.openxmlformats.schemas.drawingml.x2006.chart.CTPlotArea;
 
-public class Reader {
+public class ExcelDemo {
 
 	public static void makeChart(String outFile, String[] headers, double[]... dataStream) throws IOException {
         Workbook wb = new XSSFWorkbook();
