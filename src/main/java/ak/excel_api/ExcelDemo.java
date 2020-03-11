@@ -96,8 +96,10 @@ public class ExcelDemo {
 		Row headers = sheet.getRow(0);
 		Cell theColmn = null;
 		for (Cell c:headers)
-			if (c.getStringCellValue().trim().equalsIgnoreCase(columnHdr))
-				theColmn = c;		
+			if (c.getStringCellValue().trim().equalsIgnoreCase(columnHdr)) {
+				theColmn = c;
+				break;
+			}
 		if (theColmn==null) 
 			throw new IllegalArgumentException("Column "+columnHdr+" not found in "+filePath);		
 		int colIndex = theColmn.getColumnIndex();
